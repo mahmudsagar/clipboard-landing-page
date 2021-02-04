@@ -1,0 +1,43 @@
+.snippets {
+    margin-bottom: 5rem;
+    &__content {
+        margin-top: 4rem;
+        img {
+            margin-bottom: 1.875rem;
+            width: 100%;
+            @include breakpoint-down(small){
+                padding: 0 1.25rem;
+            }
+
+            @include breakpoint-up(medium) {
+                width: 100%;
+                margin-left: -4rem;
+            }
+
+            @include breakpoint-up(large) {
+                width: 100%;
+                margin-left: -25rem;
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+
+    &__items {
+        text-align: center;
+        // padding: 0 1.4rem;
+
+        @include breakpoint-up(medium) {
+            text-align: left;
+        }
+    }
+
+    &__item{
+        @include breakpoint-up(large){
+            width: 80%;
+        }
+    }
+}

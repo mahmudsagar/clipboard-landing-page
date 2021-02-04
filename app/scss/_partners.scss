@@ -1,0 +1,12 @@
+.partners{
+    margin-bottom: 5rem;
+    img{
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+    @include breakpoint-up(medium){
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+    }
+}

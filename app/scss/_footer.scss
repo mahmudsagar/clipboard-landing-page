@@ -1,0 +1,48 @@
+.footer{
+    background: $lightGray;
+    &__content{
+        padding-top: 3rem;
+        row-gap: 1.5rem;
+        padding-bottom: 2rem;
+        @include breakpoint-up(medium){
+            grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+            .link-first-half{
+                display: grid;
+                justify-items: start;
+                row-gap: .5rem;
+            }
+            .link-second-half{
+                display: grid;
+                justify-items: start;
+                row-gap: .5rem;
+            }
+        }
+        img{
+            width: 25%;
+            align-self: center;
+        }
+        .icons{
+            align-self: center;
+            justify-self: end;
+            a{
+                font-size: 1.5rem;
+                &:not(:last-child){
+                    margin-right: .3rem;
+                }
+            }
+        }
+    }
+    a{
+        color: $grayishBlue;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $strongCyan;
+        }
+    }
+    
+    &__attribution{
+        text-align: center;
+        margin: 0;
+        padding: 1rem 0;
+    }
+}
