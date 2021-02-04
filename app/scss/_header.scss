@@ -12,10 +12,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        @include breakpoint-up(large) {
+        @include breakpoint-up(xlarge) {
         height: 58% !important;
             background-position: center 130% !important;
-            
         }
         @include breakpoint-up(medium) {
             height: 44%;

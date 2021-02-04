@@ -10,12 +10,10 @@
             }
 
             @include breakpoint-up(medium) {
-                width: 100%;
                 margin-left: -4rem;
             }
 
-            @include breakpoint-up(large) {
-                width: 100%;
+            @include breakpoint-up(xlarge) {
                 margin-left: -25rem;
             }
         }

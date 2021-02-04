@@ -23,7 +23,9 @@
         }
         .icons{
             align-self: center;
-            justify-self: end;
+            @include breakpoint-up(medium){
+                justify-self: end;            
+            }
             a{
                 font-size: 1.5rem;
                 &:not(:last-child){
@@ -44,5 +46,8 @@
         text-align: center;
         margin: 0;
         padding: 1rem 0;
+        @include breakpoint-down(small){
+            padding: 1rem 1.25rem;
+        }
     }
 }
